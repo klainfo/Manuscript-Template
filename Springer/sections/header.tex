@@ -1,0 +1,58 @@
+\documentclass{svjour3} 
+
+\usepackage{cite}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{natbib}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subfigure}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{relsize}
+\usepackage{colortbl}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{pbox}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{balance}
+\usepackage{tablefootnote}
+\usepackage{flushend}
+\usepackage{natbib}
+\usepackage{hyperref}
+
+\usepackage{soul}
+\newcommand{\todo}[1]{\hl{\small \textbf{#1}}}
+
+
+% Reduce bibliography font size
+\def\bibfont{\footnotesize}
+
+% Reduce space between references
+\setlength{\bibsep}{2.5pt}
+
+\newcommand{\conclusionbox}[1]{%
+    \vspace{1mm}
+  \noindent
+    \framebox[0.48\textwidth][c]{%
+        \parbox[b]{0.45\textwidth}{%
+            {\em #1}
+        }
+    }
+}
+
+\renewcommand{\labelitemi}{--}
+\newcommand{\startlist}{\begin{list}{\labelitemi}{\leftmargin=1em}\setlength{\itemsep}{-1mm}}
+\newcommand{\stoplist}{\end{list}}
+\newcommand{\twords}[1]{{\em \{#1\}}}
+\newcommand{\tlabel}[1]{``#1''}
+\newcommand{\parhead}[1]{\vspace{2mm} \noindent {\em\underline{#1}.}}
+\newcommand{\takeaway}[1]{\textcolor{red}{\textbf{[[Take-Away: #1]]}}}
+\pagenumbering{arabic}
+\newcommand{\smallnum}[1]{$^{\tiny {\textbf #1}}$}
+
+\newcommand{\resultBox}[1]{\begin{center}\noindent\fbox{\parbox{0.9\linewidth}{\textit{\begin{center}#1\end{center}}}}\end{center} }
+\newcommand{\smallsection}[1]{\noindent {\bf \underline{#1}}.\hspace{1mm}}
+\newcommand{\ea}{{\em et al.}}

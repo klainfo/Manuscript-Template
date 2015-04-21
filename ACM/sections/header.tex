@@ -1,0 +1,67 @@
+\documentclass{sig-alternate}
+\usepackage[sort&compress, numbers]{natbib}
+\usepackage{verbatim}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[]{algorithm2e}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{relsize}
+\usepackage{colortbl}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{pgf}
+\usepackage{pbox}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{balance}
+\usepackage{tablefootnote}
+\usepackage[bookmarks=false]{hyperref}
+\usepackage{flushend}
+
+% For backreferencing footnotes with \cref{label}
+\usepackage{cleveref}[2012/02/15]
+\usepackage{arydshln}
+\crefformat{footnote}{#2\footnotemark[#1]#3}
+
+\usepackage{soul}
+\newcommand{\todo}[1]{\hl{\small \textbf{#1}}}
+
+
+% Reduce bibliography font size
+\def\bibfont{\footnotesize}
+
+% Reduce space between references
+\setlength{\bibsep}{2.5pt}
+
+% Set bibliography title
+\renewcommand\refname{REFERENCES}
+\renewcommand\bibsection{\section{\refname}}
+
+\newcommand{\conclusionbox}[1]{%
+    \vspace{1mm}
+  \noindent
+    \framebox[0.48\textwidth][c]{%
+        \parbox[b]{0.45\textwidth}{%
+            {\em #1}
+        }
+    }
+}
+
+\renewcommand{\labelitemi}{--}
+\newcommand{\startlist}{\begin{list}{\labelitemi}{\leftmargin=1em}\setlength{\itemsep}{-1mm}}
+\newcommand{\stoplist}{\end{list}}
+\newcommand{\twords}[1]{{\em \{#1\}}}
+\newcommand{\tlabel}[1]{``#1''}
+\newcommand{\parhead}[1]{\vspace{2mm} \noindent {\em\underline{#1}.}}
+\newcommand{\takeaway}[1]{\textcolor{red}{\textbf{[[Take-Away: #1]]}}}
+\pagenumbering{arabic}
+\newcommand{\smallnum}[1]{$^{\tiny {\textbf #1}}$}
+
+\newcommand{\resultBox}[1]{\begin{center}\noindent\fbox{\parbox{0.9\linewidth}{\textit{\begin{center}#1\end{center}}}}\end{center} }
+\newcommand{\smallsection}[1]{\noindent {\bf \underline{#1}}.\hspace{1mm}}
+\newcommand{\ea}{{\em et al.}}
+
+\newcommand{\rqone}{Which model validation techniques are the least biased?}
+\newcommand{\rqtwo}{Which model validation techniques are the most stable?}

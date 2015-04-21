@@ -1,0 +1,36 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Case Study Design}\label{sec:design}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this section, we describe the design of our case study experiment that we perform in order to address our research questions.
+Figure~ provides an overview of the approach that we apply to each studied system.
+The crux of our approach is that we calculate a ground truth performance such that the performance estimates derived from model validation techniques can be compared against it.
+We describe each step in the approach below.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Studied Systems}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In selecting the studied systems, we identified two important criteria that needed to be satisfied:
+
+\begin{itemize}
+\item \textbf{Criterion 1 --- Sufficient EPV}:
+  Since we would like to study cases where EPV is low-risk (i.e, $\ge 10$) and high-risk ($< 10$), the systems that we select for analysis should begin with a low-risk EPV.
+  Our rationale is that we prefer under-sampling to over-sampling when producing our sample dataset.
+  For example, if we were to select systems with an initial EPV of 5, we would need to over-sample the defective class in order to raise the EPV to 10.
+  However, the defective class of a system with an initial EPV of 15 can be under-sampled in order to lower the EPV to 10.
+
+\item \textbf{Criterion 2 --- Sane defect data}:
+  Since it is unlikely that more software modules have defects than are free of defects, we choose to study systems that have a rate of defective modules below 50\%.
+
+\end{itemize}
+
+We began our study using the 101 publicly-available defect datasets described in Section~\ref{sec:background}. 
+To satisfy criterion 1, we exclude the 78 datasets that we found to have an EPV value lower than 10 in Section~\ref{sec:background}.
+To satisfy criterion 2, we exclude an additional 5 datasets because they have a defective ratio above 50\%.
+% (i.e., lucene-2.4, poi-2.5, poi-3.0, xalan-2.7, xerces-1.4)
+
+Table~ provides an overview of the 18 systems that satisfy our criteria for analysis.
+To combat potential bias in our conclusions, the studied systems include proprietary and open source systems, with varying size, domain, and defective ratio.
+
