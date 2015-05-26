@@ -1,0 +1,74 @@
+
+\input{sections/header.tex}
+
+\newcommand{\rqi}{What is RQ1?}
+\newcommand{\rqii}{What is RQ1?}
+
+\begin{document}
+
+\title{Title}
+
+% \author{%
+%     \IEEEauthorblockN{Chakkrit Tantithamthavorn\IEEEauthorrefmark{2}, Ahmed E. Hassan\IEEEauthorrefmark{3},  Kenichi Matsumoto\IEEEauthorrefmark{2}}
+%     \IEEEauthorblockA{\IEEEauthorrefmark{2}Graduate School of Information Science, 
+% Nara Institute of Science and Technology, Japan.
+%     \\\{chakkrit-t,matumoto\}@is.naist.jp} 
+%     \IEEEauthorblockA{\IEEEauthorrefmark{3}School of Computing, Queen's University, Canada.
+%     \\\{ahmed\}@cs.queensu.ca} 
+% }
+
+
+\author{Michael~Shell,~\IEEEmembership{Member,~IEEE,}
+        John~Doe,~\IEEEmembership{Fellow,~OSA,}
+        and~Jane~Doe,~\IEEEmembership{Life~Fellow,~IEEE}% <-this % stops a space
+\IEEEcompsocitemizethanks{\IEEEcompsocthanksitem M. Shell is with the Department
+of Electrical and Computer Engineering, Georgia Institute of Technology, Atlanta,
+GA, 30332.\protect\\
+% note need leading \protect in front of \\ to get a newline within \thanks as
+% \\ is fragile and will error, could use \hfil\break instead.
+E-mail: see http://www.michaelshell.org/contact.html
+\IEEEcompsocthanksitem J. Doe and J. Doe are with Anonymous University.}% <-this % stops a space
+\thanks{Manuscript received April 19, 2005; revised September 17, 2014.}}
+
+
+\markboth{Journal of \LaTeX\ Class Files,~Vol.~13, No.~9, September~2014}%
+{Shell \MakeLowercase{\textit{et al.}}: Bare Advanced Demo of IEEEtran.cls for Journals}
+
+
+
+\IEEEtitleabstractindextext{%
+\begin{abstract}
+The abstract goes here.
+\end{abstract}
+
+% Note that keywords are not normally used for peerreview papers.
+\begin{IEEEkeywords}
+Computer Society, IEEEtran, journal, \LaTeX, paper, template.
+\end{IEEEkeywords}}
+
+\maketitle
+\IEEEdisplaynontitleabstractindextext
+\IEEEpeerreviewmaketitle
+
+\input{sections/introduction.tex}
+\input{sections/background.tex}
+\input{sections/studydesign.tex}
+\input{sections/results.tex}
+\input{sections/threats.tex}
+
+\section{Conclusions}\label{sec:conclusions}
+
+\todo{Conclusions}
+
+\begin{itemize}
+\item itemize
+\end{itemize}
+
+\cite{Tantithamthavorn}
+
+\section*{Acknowledgments}
+
+\bibliographystyle{IEEEtranS}
+\bibliography{myref,additionalref}
+
+\end{document}
