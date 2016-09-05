@@ -1,8 +1,6 @@
 \documentclass{sig-alternate}
 \usepackage[sort&compress, numbers]{natbib}
 \usepackage{verbatim}
-\usepackage{caption}
-\usepackage{subcaption}
 \usepackage[]{algorithm2e}
 \usepackage{graphicx}
 \usepackage{booktabs}
@@ -16,9 +14,7 @@
 \usepackage{rotating}
 \usepackage{multirow}
 \usepackage{balance}
-\usepackage{tablefootnote}
-\usepackage[bookmarks=false]{hyperref}
-\usepackage{flushend}
+\usepackage{subfigure}
 
 % For backreferencing footnotes with \cref{label}
 \usepackage{cleveref}[2012/02/15]
@@ -62,6 +58,3 @@
 \newcommand{\resultBox}[1]{\begin{center}\noindent\fbox{\parbox{0.9\linewidth}{\textit{\begin{center}#1\end{center}}}}\end{center} }
 \newcommand{\smallsection}[1]{\noindent {\bf \underline{#1}}.\hspace{1mm}}
 \newcommand{\ea}{{\em et al.}}
-
-\newcommand{\rqone}{Which model validation techniques are the least biased?}
-\newcommand{\rqtwo}{Which model validation techniques are the most stable?}
